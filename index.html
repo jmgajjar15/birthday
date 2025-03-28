@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear My Girlfriend.</strong>
+                        <p>I know you like special things I have tried by 
+                            my best to make you feel special in this unique way.
+                            You are beautiful, Talented and amazing person, Thanks for coming in my life.
+                            Enjoy your 24 hrs. I will be always there for you my Love. A very Happy Birthday to my <span style="color: white;">.........</span> Princess <span style="font-size: larger; font-weight: bolder; color: red;">NEEMU...</span>
+                             
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
